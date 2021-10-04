@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+html {
+    font-size: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.user-container {
+    background-image: url(//unsplash.it/3840/2160);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-color: rgba(46, 139, 132, .8);
+    background-blend-mode: multiply;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+/* Main Container */
+
+.user-profile {
+    background-color: #dcdcdc;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+
+.profile-top {
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(to right bottom, #842E8B, #562E8B);
+}
+
+.profile-top .profile-info {
+    margin-top: 0.75rem;
+}
+
+
+.profile-bottom {
+    padding: 3rem 3rem 1rem 3rem;
+}
+
+.profile-bottom .profile-info {
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, 
+                rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: 0.45s ease-in-out;
+}
+
+.profile-bottom .profile-info .material-icons {
+    margin-right: 0.5rem;
+    color: grey;
+}
+
+.profile-bottom .profile-info:hover {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, 
+                rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+#phone,
+#email,
+#location {
+    margin-left: 0.5rem;
+    opacity: 0.5;
+}
+
+#gender {
+    text-transform: capitalize;
+}
+
+button {
+    cursor: pointer;
+    margin-top: 2rem;
+    outline: none;
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, 
+                rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(to left top, #842E8B, #562E8B);
+    color: #fff;
+}
